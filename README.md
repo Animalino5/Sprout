@@ -24,6 +24,7 @@ Sprout turns `.bas` files into native 3DS homebrew (`.3dsx`)! no C required. Wri
 | Audio       | `LOADSOUND`/`PLAYSOUND` (WAV, in RAM), `LOADMUSIC`/`PLAYMUSIC` (streamed), `VOLMUSIC`, `PAUSEMUSIC` |
 | Files       | `OPENW`/`OPENR`/`WRITE`/`READNUM`/`READLINE$`/`CLOSE` for save games on SD card |
 | Math/Strings| `ABS`, `SIN`, `COS`, `SQR`, `RND`, `RNDF`, `LEN`, `LEFT$`, `MID$`, `STR$`, `UCASE$`, `INSTR`, ... |
+| Rooms       | `ROOM name / INIT / UPDATE / END ROOM` + `GOTOROOM "name"` for scene management |
 
 ## Quick start
 
@@ -86,6 +87,7 @@ The `examples/` folder is half the documentation, read it in order:
 | 09 | `dualscreen.bas`   | Drawing to both top and bottom screens                      |
 | 10 | `multifile.bas`    | `IMPORT` to split a project across multiple `.bas` files    |
 | 11 | `transforms.bas`   | `TRANSLATE`, `ROTATE`, `RESIZE` (global transform state)    |
+| 12 | `rooms.bas`        | `ROOM` / `GOTOROOM`, scene management (menu, play, gameover) |
 
 ## Games
 
