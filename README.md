@@ -17,12 +17,12 @@ Sprout turns `.bas` files into native 3DS homebrew (`.3dsx`)! no C required. Wri
 | ----------- | --------------------------------------------------------------- |
 | Language    | Variables (int/float/string), arrays, `FUNCTION`/`END FUNCTION`, `IF/ELSEIF/ELSE`, `WHILE`, `FOR/NEXT`, `DO/LOOP`, `IMPORT` for multi-file projects |
 | Graphics    | `CLS`, `PIXEL`, `LINE`, `RECT`, `CIRCLE`, `TRIANGLE`, `ELLIPSE`, `TEXT`, `TEXTSIZE`, custom TTF fonts via `LOADFONT`/`FONT` |
-| Transforms  | `TRANSLATE`, `ROTATE`, `RESIZE` — global affine transform applied to all draws |
+| Transforms  | `TRANSLATE`, `ROTATE`, `RESIZE` for global affine transform applied to all draws |
 | Images      | `LOADIMAGE`, `DRAWIMAGE`, `DRAWIMAGEEX` (scale + rotate), `LOADSHEET` + `DRAWSHEET` for sprite-sheet animation |
 | Dual screen  | `SETSCREEN 0` (top 400×240), `SETSCREEN 1` (bottom 320×240, touch-enabled) |
 | Input       | `BUTTON`, `BUTTONDOWN`, `BUTTONUP`, `TOUCHDOWN`, `GETTOUCH`, `GETCIRCLEPAD` |
 | Audio       | `LOADSOUND`/`PLAYSOUND` (WAV, in RAM), `LOADMUSIC`/`PLAYMUSIC` (streamed), `VOLMUSIC`, `PAUSEMUSIC` |
-| Files       | `OPENW`/`OPENR`/`WRITE`/`READNUM`/`READLINE$`/`CLOSE` -- save games on SD card |
+| Files       | `OPENW`/`OPENR`/`WRITE`/`READNUM`/`READLINE$`/`CLOSE` for save games on SD card |
 | Math/Strings| `ABS`, `SIN`, `COS`, `SQR`, `RND`, `RNDF`, `LEN`, `LEFT$`, `MID$`, `STR$`, `UCASE$`, `INSTR`, ... |
 
 ## Quick start
@@ -43,7 +43,7 @@ Make sure `DEVKITPRO` and `DEVKITARM` env vars are set (the installer does this)
 make sproutc
 ```
 
-That's it — `./sproutc` is a normal host binary (gcc, no special deps).
+That's it. `./sproutc` is a normal host binary (gcc, no special deps).
 
 ### 3. Compile a BASIC program to a 3DS app
 
@@ -91,8 +91,8 @@ The `examples/` folder is half the documentation, read it in order:
 
 Two complete games live in `examples/complex_samples`
 
-- **`neondrifter/neon_drifter.bas`** — A polished dual-screen shoot-em-up. Demonstrates particles, screen shake via `TRANSLATE`, state machines, music streaming.
-- **`chocolatecatch/cc_finished.bas`** — A touch-based catch game. Good example of touch input, sprite animation, and a simple menu.
+- **`neondrifter/neon_drifter.bas`**: A polished dual-screen shoot-em-up. Demonstrates particles, screen shake via `TRANSLATE`, state machines, music streaming.
+- **`chocolatecatch/cc_finished.bas`**: A touch-based catch game. Good example of touch input, sprite animation, and a simple menu.
 
 Each game has its own `assets/` folder and a `config.txt` for app metadata (name, description, author).
 
