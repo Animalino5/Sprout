@@ -48,7 +48,7 @@ That's it. `./sproutc` is a normal host binary (gcc, no special deps).
 ### 3. Compile a BASIC program to a 3DS app
 
 ```bash
-./scripts/build_3ds.sh examples/function/hello.bas
+./scripts/build_3ds.sh examples/functions/hello.bas
 ```
 
 Output lands in `build-3ds/hello.3dsx`.
