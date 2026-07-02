@@ -8,8 +8,8 @@ Sprout turns `.bas` files into native 3DS homebrew (`.3dsx`)! no C required. Wri
 
 - **BASIC, not C.** No pointers, no headers, no `malloc`. Just simple functions like `IF`, `TEXT`, `DRAWIMAGE` and more!
 - **Native 3DS output.** Real GPU via citro2d, real audio via ndsp, real button/touch/circle-pad input. Not an emulator sandbox.
-- **One command to build.** `./scripts/build_3ds.sh my_game.bas` → `.3dsx` you can run.
-- **Asset pipeline included.** Drop PNGs and WAVs in `assets/` — Sprout converts them to `.t3x` and bundles them as RomFS automatically.
+- **One command to build.** `./scripts/build_3ds.sh my_game.bas` to `.3dsx` you can run.
+- **Asset pipeline included.** Drop PNGs and WAVs in `assets/` and Sprout converts them to `.t3x` and bundles them as RomFS automatically.
 
 ## Features
 
