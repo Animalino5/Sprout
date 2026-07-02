@@ -1,0 +1,3 @@
+name=Catch The Chocolate!
+description=Bounce chocolate into your mouth!
+author=Sprout

@@ -1,0 +1,3 @@
+name=Neon Drifter
+description=Wave survival shooter
+author=Sprout

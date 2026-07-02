@@ -1,0 +1,11 @@
+' hello.bas, your first Sprout program
+CLS RGB(20, 20, 50)
+COLOR RGB(100, 255, 200)
+TEXTSIZE 2
+TEXT 100, 40, "Hello, Sprout!"
+TEXTSIZE 1
+
+WHILE TRUE
+    IF BUTTONDOWN(START) THEN END
+    WAITFRAME
+WEND
